@@ -17,7 +17,7 @@ Death tracking is (by default) completely disabled while in party (so you can gr
 /daycore disableinparty       - disable death tracking while in party
 /daycore enableappeal         - enable self-appeal on death screen
 /daycore disableappeal        - disable self-appeal on death screen
-/daycore changeblockhours XXX - set death block hours value (1 - 9999999)
+/daycore changeblockhours XXX - set death block hours value (1 - 9999999), default is 12
 ```
 Also, you can change some configuration by editing `DayCore.lua` file (see "configuration" section at the top)  
 
