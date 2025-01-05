@@ -1,0 +1,99 @@
+<Ui
+	xmlns="http://www.blizzard.com/wow/ui/"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\FrameXML\UI.xsd">
+	
+	<Font name="MyFont" font="Fonts\FRIZQT__.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="36"/>
+		</FontHeight>
+	</Font>
+	
+	<Font name="MyFontSmaller" font="Fonts\FRIZQT__.TTF" virtual="true">
+		<FontHeight>
+			<AbsValue val="16"/>
+		</FontHeight>
+	</Font>
+	
+	<Frame name="MainFrame" toplevel="true" enableMouse="true" movable="false" parent="UIParent" hidden="true" frameStrata="DIALOG">
+		<Size>
+			<RelDimension x="1" y="1"/>
+		</Size>
+		<Anchors>
+			<Anchor point="CENTER">
+				<Offset>
+					<RelDimension x="0" y="0"/>
+				</Offset>
+			</Anchor>
+		</Anchors>
+		
+		<Frames>
+			<Frame name="TextFrame" hidden="false" setAllPoints="true">
+				<Layers>
+					<Layer level="OVERLAY">
+						<FontString inherits="MyFont" text="You are dead for today" outline="THICK">
+							<Color r="0.9" g="0.3" b="0.3"/>
+							<Shadow>
+								<Color a="0.9" r="0.1" g="0.1" b="0.1"/>
+								<Offset x="1.3" y="-1.3"/>
+							</Shadow>
+						</FontString>
+					</Layer>
+				</Layers>
+			</Frame>
+			
+			<Frame name="AppealWrapper" hidden="false" setAllPoints="true">
+				<Frames>
+					<Frame name="AppealDescrWrapper" hidden="false" setAllPoints="true">
+						<Layers>
+							<Layer level="OVERLAY">
+								<FontString name="AppealDescrString" inherits="MyFontSmaller" outline="THICK">
+									<Anchors>
+										<Anchor point="CENTER">
+											<Offset>
+												<RelDimension x="0" y="-0.1"/>
+											</Offset>
+										</Anchor>
+									</Anchors>
+									<Color r="1" g="0.8" b="0.8"/>
+									<Shadow>
+										<Color a="0.9" r="0.1" g="0.1" b="0.1"/>
+										<Offset x="1.2" y="-1.2"/>
+									</Shadow>
+								</FontString>
+							</Layer>
+						</Layers>
+					</Frame>
+					
+					<EditBox name="AppealInput" inherits="InputBoxTemplate" letters="120" hidden="false" setAllPoints="true">
+						<Size>
+							<AbsDimension x="500" y="20"></AbsDimension>
+						</Size>
+						<Anchors>
+							<Anchor point="CENTER">
+								<Offset>
+									<RelDimension x="0" y="-0.13"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+						<Scripts>
+							<OnLoad>
+								this:SetAutoFocus(false);
+								this:SetTextInsets(0, 8, 0, 0);
+							</OnLoad>
+						</Scripts>
+						<FontString name="AppealInputString" inherits="GameFontNormal"></FontString>
+					</EditBox>
+				</Frames>
+			</Frame>
+			
+			<Frame name="BackgroundFrame" hidden="false" setAllPoints="true">
+				<Layers>
+					<Layer level="BACKGROUND">
+						<Texture name="BackgroundMain" file="Interface\addons\DayCore\images\textures\BackgroundMain"></Texture>
+					</Layer>
+				</Layers>
+			</Frame>
+		</Frames>
+	</Frame>
+</Ui>

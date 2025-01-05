@@ -1,0 +1,9 @@
+## Interface: 11200
+## Title: |cffabd473Day|cff58ff00 Core
+## Author: Woodhan (Drakkar WoW server)
+## Version: 1.0.0
+## Notes: Semi-hardcore addon that disables character for 12 hours in case of death (PvP-friendly)
+## SavedVariablesPerCharacter: enableInParty, allowAppeal, deathDelayHours, lifeResetAt, unappealedDeathCount
+util.lua
+DayCore.xml
+DayCore.lua
