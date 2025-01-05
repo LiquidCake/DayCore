@@ -22,4 +22,4 @@ Death tracking is (by default) completely disabled while in party (so you can gr
 Also, you can change some configuration by editing `DayCore.lua` file (see "configuration" section at the top)  
 
 ### Installation
-As usual - download addon files as zip file, unpack, make sure files are put into a directory named exactly "DayCore"
+As usual - download addon files [as zip archive](https://github.com/LiquidCake/DayCore/archive/refs/heads/master.zip), unpack, make sure files are put into a directory named exactly "DayCore"
