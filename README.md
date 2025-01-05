@@ -1,9 +1,9 @@
 # DayCore
 DayCore is a World of Warcraft 1.12 (Vanilla/Turtle WoW) addon that introduces a PvP-friendly semi-hardcore experience by locking a character for a certain amount after it dies.  
 
-Character is blocked only temporarily (by default 12h but can be any other number). And one also requires discipline not to unlock it manually. But such gameplay mode could be an interesting alternative to real hardcore for players that want to add some intensity and immersion to their gameplay, while not having to start all over again each time, want to play with enabled PvP or just to be immune to death caused by lag or bugs.  
+Character is blocked only temporarily (by default). And one also requires discipline not to unlock it manually. But such gameplay mode could be an interesting alternative to real hardcore for players that want to add some intensity and immersion to their gameplay, while not having to start all over again each time, want to play with enabled PvP or just to be immune to death caused by lag or bugs.  
 
-After installation, DayCore starts to watch your character and when it dies - addon shows a death screen that blocks controls. After a short delay, an opaque background is shown, and will block the view until the death timer ends (12 hours by default). Then you can play that character normally again.  
+After installation, DayCore starts to watch your character and when it dies - addon shows a death screen that blocks controls. After a short delay, an opaque background is shown, and will block the view until the death timer ends (12 hours by default but can be any other number). Then you can play that character normally again.  
 
 Death screen contains (if not disabled) a self-appeal "captcha" text that allows you to unblock a character instantly with zero consequences - this is useful when you died because of non-gameplay reasons like internet issue or just during some open-world PvP.  
 
